@@ -1,0 +1,65 @@
+{
+  "produtos": [
+
+    {
+      "id": "1",
+      "nome": "Pop Stranger Things Will",
+      "preco": "119",
+      "imagem": "/src/assets/Pop Stranger Things Will Vinyl .jpg"
+    },
+    {
+      "id": "2",
+      "nome": "Pop Stranger Things Steve",
+      "preco": "159,00",
+      "imagem": "/src/assets/Pop Stranger Things Steve.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "Pop Stranger Things Robin",
+      "preco": "189,99",
+      "imagem": "/src/assets/Pop Stranger Things Robin Vinyl.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "Pop Stranger Things Max",
+      "preco": "112,99",
+      "imagem": "/src/assets/Pop Stranger Things Max Vinyl.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Pop Stranger Things Lucas",
+      "preco": "163,00",
+      "imagem": "/src/assets/Pop Stranger Things Lucas .jpg"
+    } ,
+
+    {
+      "id": "6",
+      "nome": "POP! STRANGER THINGS  DUSTIN",
+      "preco": "178,00",
+      "imagem": "/src/assets/POP! STRANGER THINGS  DUSTIN.jpg"
+    } ,
+
+    {
+      "id": "7",
+      "nome": "POP! STRANGER THINGS  NANCY COM ESPINGARDA",
+      "preco": "199,00",
+      "imagem": "/src/assets/POP! STRANGER THINGS  NANCY COM ESPINGARDA.jpg"
+    } ,
+
+    {
+      "id": "8",
+      "nome": "Pop! Stranger Things - Mike Wheeler",
+      "preco": "144,00",
+      "imagem": "/src/assets/Pop! Stranger Things - Mike Wheeler.jpg"
+    } ,
+
+    {
+      "id": "9",
+      "nome": "STRANGER THINGS ONZE",
+      "preco": "183,00",
+      "imagem": "/src/assets/POP! STRANGER THINGS ONZE .jpg"
+    } 
+
+
+  ]
+}

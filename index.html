@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/add_product.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_logo_titulo">
+            <img src="/src/assets/stranger-things.png" alt="Logo Harry Potter">
+            <h1>Alura Geek</h1>
+        </div>
+        <nav class="menu_botao">
+            <ul>
+                <li><a href="#meusProdutos">Produtos</a></li>
+                <li><a href="#adicionar">Adicionar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container_produtos" id="meusProdutos">
+            <h1 class="produtos_titulo">Meus produtos:</h1>
+            <section class="produtos" id="produtos">
+               
+            </section>
+        </section>
+        
+
+            
+        
+            <div class="produtos-cadastrados" id="product-list" data-lista>
+                <!-- os produtos entram aqui por meio do js -->
+            </div>
+        </section>
+
+        <section class="add-produtos">
+            <h2>Add a new product</h2>
+            <form class="conteiner-formulario" action="" data-formulario>
+                <div class="campo-formulario">
+                    <input class="campo-escrita" type="text" placeholder="Nome" data-nome>
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="campo-formulario">
+                    <input class="campo-escrita" type="text" placeholder="Preco" data-valor>
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="campo-formulario">
+                    <input class="campo-escrita" type="url" placeholder="image url" data-url>
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="produto_botao">
+                    <button type="submit">Guardar</button>
+                    <button type="button" class="cancel" onclick="limparForm()">Limpar</button>
+                </div>
+            </form>
+
+        </section>
+
+        <div id="mensagem" class="mensagem"></div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape_titulo">
+            <img src="/src/assets/stranger-things.png" alt="Logo Harry Potter">
+            <h1>Alura Geek</h1>
+        </div>
+        <h2>Desenvolvido por Vanessa</h2>
+        <p>Projeto desenvolvido como parte integrante da formação Front End do programa Oracle Next Education, parceria de Alura + Oracle</p>
+    </footer>
+
+    <script src="./script/listarProdutos.js" type="module"></script>
+    <script src="./script/conection.js" type="module"></script>
+    <script src="./script/adicionarProduto.js" type="module"></script>
+    <script src="./script/excluirProduto.js" type="module"></script>
+</body>
+</html>

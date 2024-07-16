@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+*,
+*::before,
+*::after {
+    --verde-claro: rgb(129, 143, 0);
+    --verde-escuro: rgba(0, 128, 0, 0.692);
+}
+
+body{
+	font-family: "Modern Antiqua", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde-claro);
+}
+
+
+.cabecalho {
+    display: flex;
+    background-color: #0f0101;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 800;
+    padding: 1rem;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0101;
+    padding: 1rem;
+}
+
+.cabecalho_logo_titulo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_logo_titulo img {
+    width: 3rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+}
+
+.cabecalho_logo_titulo h1 {
+    font-family: "Modern Antiqua", serif;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* >>>>> PRODUTOS <<<<< */
+
+.lista-produtos{margin: 25px;}
+.lista-produtos h2{margin: 12px;}
+
+.image-card{
+	width: 8rem;
+    height: 10rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.card-produto{
+    background-color: #d3a625;
+    padding: 1rem 1rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    height: 18rem;
+    box-shadow: 0.8px 8px 16px rgba(0, 0 ,0, 0.4);
+}
+
+.produtos-cadastrados{
+    display: flex;
+    padding: 12px;
+    margin: 12px;
+    flex-wrap: wrap;
+    align-content: space-around;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 80%;
+	
+}
+
+.trash{cursor: pointer;}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    align-content: end;
+	margin: 0.5rem; 
+}
+
+.conteiner-produto *{margin-left: 5px;}
+
+.conteiner-produto{
+	
+		flex: 3;
+		margin-right: 0.5rem;
+	}
+	
+
+
+.conteudo-produto{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 50px;
+}
+
+.conteiner-descricao{
+	font-size: 1rem;
+    margin-bottom: 0;
+}
+
+main.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+background-color: rgb(231, 126, 126);
+}
+
+.remover-item img{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* >>>>> FORMULARIO <<<<< */
+
+.add-produtos{
+	flex: 1;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    margin-top: 0;
+    height: fit-content;
+}
+.add-produtos h2 {
+font-weight: 1200;
+margin-bottom: 1rem;
+text-align: center;   }
+.conteiner-formulario{
+    padding: 12px;
+    margin: 12px;
+}
+
+.campo-formulario{margin: 25px;}
+
+
+
+.rodape {
+    background-color: #0f0101;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.rodape_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.rodape_titulo img {
+    width: 3rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:887px){
+
+    main{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:column-reverse;
+    }
+    .card-produto{
+        flex:0 2 30% ;
+        background-color: var(--verde-escuro);
+        border-radius: 12px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .conteiner-formulario{
+        padding: 12px;
+        margin: 12px;
+        font-size: larger;
+    }
+}
